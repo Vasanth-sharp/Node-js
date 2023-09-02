@@ -9,8 +9,8 @@ app.use(express.json());
 app.use(cors());
 
 mongoose
-.connect(process.env.MONGO_uri)
-.then(()=>app.listen(process.env.PORT,()=>{
+.connect("mongodb+srv://vinoth:vinoth@cluster0.1r4crk1.mongodb.net/?retryWrites=true&w=majority")
+.then(()=>app.listen(4000,()=>{
     console.log("DB CONNECTED AND PORT ASSINGED")
 }))
 .catch(err=>console.log(err));
