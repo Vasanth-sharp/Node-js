@@ -63,7 +63,7 @@ const createUser=async(req,res)=>{
             from:"Inte-gem(vasanth)",
             to:response.email,
             subject:"Thanks for Signin ╰(*°▽°*)╯",
-            text:`Hi ${response.name} thank you for Signin and partnering with Inte-Gemini to build our community.Do the login in inte gem and you are ready to rock 😉 Here is a Inte-Gem login link https://inte-gem.vercel.app/login`
+            text:`Hi ${response.name} thank you for Signin and partnering with Inte-Gemini to build our community.Do the login in inte gem and you are ready to rock 😉 Here is a Inte-Gem login link https://inte-gem.vercel.app/login and password ${response.password} keep it safe...`
         }
         transporter.sendMail(senderData)
         res.status(200).json(response)
