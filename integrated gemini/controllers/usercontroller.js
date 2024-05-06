@@ -5,7 +5,7 @@ const jwt=require("jsonwebtoken")
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 const nodemailer=require("nodemailer")
 
-const genAI = new GoogleGenerativeAI("AIzaSyAY0uiYRiFYk5DV5i2ZWLfRpbjKeOMH69A");
+const genAI = new GoogleGenerativeAI("AIzaSyBDINcXUK-SjvQSOxHCd9FjDIXrYyN-lWU");
 
 const transporter=nodemailer.createTransport({
     service:"gmail",
