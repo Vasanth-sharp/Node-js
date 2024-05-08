@@ -5,13 +5,13 @@ const jwt=require("jsonwebtoken")
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 const nodemailer=require("nodemailer")
 
-const genAI = new GoogleGenerativeAI("AIzaSyBDINcXUK-SjvQSOxHCd9FjDIXrYyN-lWU");
+const genAI = new GoogleGenerativeAI("AUTH_TOKEN_FROM_GOOGLE");
 
 const transporter=nodemailer.createTransport({
     service:"gmail",
     auth:{
         user:"vasanthakumarotp@gmail.com",
-        pass:"fzrk ktqm bmaa nnmk"
+        pass:"AUTH_TOKEN_FROM_NODEMAILER"
     }
 })
 
