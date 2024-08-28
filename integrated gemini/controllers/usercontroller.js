@@ -84,7 +84,8 @@ const handleVisionPrompt=async(req,res)=>{
                 {textprompt:prompt,img:image,mime:mimeType}
             }})
 
-            const model=await genAI.getGenerativeModel({model:"gemini-pro-vision"})
+            // const model=await genAI.getGenerativeModel({model:"gemini-pro-vision"}) deprecated on july 12 2024
+            const model=await genAI.getGenerativeModel({model:"gemini-1.5-flash"})//gemini-pro-vision
             const data={
                 inlineData:{
                     data:image,
