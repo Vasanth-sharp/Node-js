@@ -53,7 +53,10 @@ const signin = async (req, res) => {
     };
 
     transporter.sendMail(senderData);
-
+        //If error occurs info will null,
+        //If succesfull error will null
+        // console.log(err.message)
+        // console.log(info)
     res.status(200).json(response);
   } catch (err) {
     res.status(400).json(err);
